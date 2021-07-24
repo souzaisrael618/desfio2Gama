@@ -1,27 +1,36 @@
 import styled from 'styled-components';
-//import { Container } from './style';
 
-export const Container = styled.div `
+export const Container = styled.div`
+  width: 80%;
+  margin: auto;
 
-    width: 82%;
-    margin: auto;
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-
-    section {
-       
-        width: 100%;
-        height: 100vh;
-        background: #e2e2;
-        display: flex;
-
-        .product1{
-            display: grid;
-            text-align: center;
-            height: 300px;
-            background: grey;
-            border-radius: 12px;
-            padding: 12px;
-        }
+    .cart{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+  }
 
+  section {
+    height: 100vh;
+    width: 100%;
+    background: #e2e2;
+    display: flex;
+    justify-content: space-around;
+
+    .product-content{
+      display: grid;
+      text-align: center;
+      height: 300px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px;
+
+    }
+  }
 `
